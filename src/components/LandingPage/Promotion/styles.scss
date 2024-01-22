@@ -1,0 +1,71 @@
+@import '../../../style/variables.scss';
+@import '../../../style/mixins.scss';
+.container{
+    margin:25px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+
+    .firstCol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 80px;
+
+       .promotion-header{
+            text-align: center;
+    
+            h1{
+                font-size: xx-large;
+                font-family: $Font2;
+                color: #7C0521;
+            }
+        }
+    
+        .features{
+            margin-top: 10%;
+            background-color: white;
+            padding: 10px;
+            gap: 30px;
+            padding: 20px;
+            @include FlexRow;
+
+            .singleFeature{
+                
+                gap:10px;
+                padding: 10px;
+                @include FlexRow;
+
+                
+                &.separator {
+                    border-right: 1px solid black;
+                }
+                
+
+                p{
+                    font-size:large;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .appButton{
+            margin-top: 10%;
+            @include FlexRow;
+            gap:10px;
+            background-color: #FF8C978C;
+            padding: 20px;
+
+            p{
+                font-size:xx-large;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    
+
+}

@@ -1,0 +1,47 @@
+.header{
+    
+    .image{
+        height:80vh;
+        width:100%;
+    }
+    .headerName{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        left:50%;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #E27E96;
+
+        p{
+            font-size: 24px;
+            font-weight: 900;
+
+            .active{
+                padding: 10;
+
+            }
+
+        }
+    }
+    .title{
+        position: absolute;
+        top: 30%;
+        left:60%; 
+        
+        h1{
+            font-size: 6rem;
+            margin-bottom: 10%;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            margin-left: -40%;
+            font-weight: 500;
+        }
+    }
+}
